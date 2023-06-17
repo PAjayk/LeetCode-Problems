@@ -1,0 +1,9 @@
+class Solution(object):
+    def toHex(self, num):
+         if(num>=0):
+            return hex(num).replace("0x","")
+         else:
+            k=num+2**32
+            return hex(k).replace("0x","")
+        
+        
