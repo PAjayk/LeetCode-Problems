@@ -1,0 +1,8 @@
+class Solution(object):
+    def moveZeroes(self, nums):
+        k=nums.count(0)
+        for i in range(0,k):
+            if(0 in nums):
+                nums.remove(0)
+        for j in range(k):
+            nums.append(0)
