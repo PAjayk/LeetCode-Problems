@@ -1,0 +1,25 @@
+class Solution(object):
+    def reverse(self, x):
+        if(x>0):
+            s=0
+            while(x>0):
+                k=x%10
+                s=s*10+k
+                x=x//10
+            if(s<2147483647):
+                return s
+            else:
+                return 0
+        else:
+            f=-x
+            s=0
+            while(f>0):
+                k=f%10
+                s=s*10+k
+                f=f//10
+            j=-s
+            if(j>-2147483647):
+                return j
+            else:
+                return 0
+            
