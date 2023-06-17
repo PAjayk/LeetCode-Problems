@@ -1,0 +1,10 @@
+class Solution(object):
+    def capitalizeTitle(self, title):
+        s=title.split()
+        n=""
+        for i in s:
+            if(len(i)>2):
+                n=n+i.title()+" "
+            else:
+                n=n+i.lower()+" "
+        return n[:len(n)-1:]
