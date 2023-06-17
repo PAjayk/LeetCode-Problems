@@ -1,0 +1,6 @@
+class Solution(object):
+    def maxProduct(self, nums):
+        k=max(nums)
+        l=nums.remove(k)
+        f=max(nums)
+        return (k-1)*(f-1)
