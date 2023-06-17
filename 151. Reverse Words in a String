@@ -1,0 +1,11 @@
+class Solution(object):
+    def reverseWords(self, s):
+        m=s.split()
+        k=m[::-1]
+        s=""
+        for i in k:
+            s=s+i
+            s=s+" "
+        return s[0:len(s)-1]
+            
+        
