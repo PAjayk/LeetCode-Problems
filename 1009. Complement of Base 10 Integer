@@ -1,0 +1,7 @@
+class Solution(object):
+    def bitwiseComplement(self, n):
+        k=bin(n).replace("0b","")
+        z="1"*len(k)
+        a=int(z,2)
+        return n^a
+        
