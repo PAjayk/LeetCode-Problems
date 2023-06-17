@@ -1,0 +1,7 @@
+class Solution:
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
+        f=sorted(jewels)
+        su=0
+        for i in range(len(f)):
+            su=su+stones.count(f[i])
+        return su
