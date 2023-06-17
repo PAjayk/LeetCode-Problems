@@ -1,0 +1,6 @@
+class Solution(object):
+    def isPerfectSquare(self, num):
+        k=int(num**0.5)
+        if(k**2==num):
+            return "true"
+        
