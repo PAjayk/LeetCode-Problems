@@ -1,0 +1,5 @@
+class Solution(object):
+    def isPowerOfFour(self, n):
+        for i in range(0,19):
+            if(n==pow(4,i)):
+                return "true"
