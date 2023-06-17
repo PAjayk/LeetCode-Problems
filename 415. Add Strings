@@ -1,0 +1,6 @@
+class Solution(object):
+    def addStrings(self, num1, num2):
+        p=int(num1)
+        q=int(num2)
+        r=p+q
+        return str(r)
