@@ -1,0 +1,8 @@
+class Solution(object):
+    def trailingZeroes(self, n):
+        s=0
+        while(n>4):
+            k=n//5
+            s=s+k
+            n=k
+        return s
