@@ -1,0 +1,11 @@
+class Solution(object):
+    def sortedSquares(self, nums):
+        l=[]
+        k=len(nums)
+        for i in range(0,k):
+            k=nums[i]**2
+            l.append(k)
+        l.sort()
+        return l
+        
+        
