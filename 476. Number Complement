@@ -1,0 +1,13 @@
+class Solution(object):
+    def findComplement(self, num):
+        k=bin(num).replace("0b","")
+        s=""
+        for i in range(0,len(k)):
+            if(k[i]=="0"):
+                s=s+"1"
+            else:
+                s=s+"0"
+        l=int(s,2)
+        return l
+            
+        
