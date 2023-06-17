@@ -1,0 +1,6 @@
+class Solution:
+    def detectCapitalUse(self, z: str) -> bool:
+        if(z==z.title() or z==z.upper() or z==z.lower()):
+            return True
+        
+        
