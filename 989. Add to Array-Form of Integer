@@ -1,0 +1,14 @@
+class Solution(object):
+    def addToArrayForm(self, num, k):
+        l=[]
+        s=0
+        v=len(num)
+        for i in num:
+            s=s*10+i
+        s=s+k
+        while(s>0):
+            g=s%10
+            l.append(g)
+            s=s//10
+        return l[::-1]
+        
